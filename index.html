@@ -15,16 +15,29 @@
       font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(135deg, #1d1b20, #3c0c59); /* Changed to black and violet mixture */
+      /* New aesthetic background with a mixed pattern */
+      background-color: #141414;
+      background-image: linear-gradient(45deg, #1f1f1f 25%, transparent 25%, transparent 75%, #1f1f1f 75%, #1f1f1f), 
+                        linear-gradient(45deg, #1f1f1f 25%, transparent 25%, transparent 75%, #1f1f1f 75%, #1f1f1f);
+      background-size: 40px 40px;
+      background-position: 0 0, 20px 20px;
+      animation: movePattern 20s linear infinite;
       color: #e0e0e0; /* Changed font color for better readability on dark background */
       line-height: 1.6;
+    }
+
+    /* Keyframes for the background pattern animation */
+    @keyframes movePattern {
+      from { background-position: 0 0, 20px 20px; }
+      to { background-position: 40px 40px, 60px 60px; }
     }
 
     /* Hero section styling */
     .hero {
       text-align: center;
       padding: 5rem 1rem;
-      background: linear-gradient(135deg, #a777f1, #513e9a); /* A deeper, more vibrant gradient */
+      background: rgba(30, 30, 30, 0.5); /* Semi-transparent background for contrast */
+      backdrop-filter: blur(10px);
       color: white;
     }
 
@@ -32,7 +45,7 @@
       width: 140px;
       height: 140px;
       border-radius: 50%;
-      border: 5px solid white;
+      border: 5px solid #ff5722; /* New accent color */
       box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
       transition: transform 0.3s ease-in-out;
       margin-bottom: 1rem;
@@ -57,7 +70,7 @@
     }
 
     .github-btn {
-      background: #24292e; /* GitHub's brand color */
+      background: #ff5722; /* New accent color for button */
       color: white;
       border: none;
       padding: 0.75rem 1.5rem;
@@ -73,7 +86,7 @@
     }
 
     .github-btn:hover {
-      background: #000;
+      background: #e64a19;
       transform: translateY(-2px);
     }
 
@@ -88,8 +101,8 @@
     h2 {
       font-size: 2.2rem;
       font-weight: 600;
-      color: #6c5ce7; /* Changed color for better readability */
-      border-bottom: 3px solid #6c5ce7;
+      color: #ff5722; /* New accent color */
+      border-bottom: 3px solid #ff5722;
       display: inline-block;
       padding-bottom: 0.25rem;
       margin-top: 3rem;
@@ -106,7 +119,7 @@
     }
 
     .skills-list li {
-      background-color: #6c5ce7;
+      background-color: #ff5722; /* New accent color */
       color: white;
       padding: 0.5rem 1rem;
       border-radius: 20px;
@@ -115,7 +128,8 @@
 
     /* Project cards */
     .project-card {
-      background: #2b2b2b; /* Changed card background for contrast */
+      background: rgba(43, 43, 43, 0.7); /* Semi-transparent card background for contrast */
+      backdrop-filter: blur(5px);
       padding: 1.5rem;
       margin: 1rem 0;
       border-radius: 12px;
@@ -131,7 +145,7 @@
     .project-card h3 {
       font-size: 1.5rem;
       font-weight: 600;
-      color: #9370db; /* Changed color for better readability */
+      color: #ff5722; /* New accent color */
       margin-bottom: 0.5rem;
     }
 
@@ -141,13 +155,13 @@
 
     /* Contact section links */
     a {
-      color: #9370db; /* Changed color for better readability */
+      color: #ff5722; /* New accent color */
       text-decoration: none;
       transition: color 0.3s ease;
     }
 
     a:hover {
-      color: #a777f1; /* Changed hover color for better readability */
+      color: #e64a19; /* Changed hover color for better readability */
       text-decoration: underline;
     }
     
@@ -155,7 +169,7 @@
     .social-icons a {
         font-size: 2rem;
         margin: 0 1rem;
-        color: #9370db;
+        color: #ff5722; /* New accent color */
     }
 
     /* Footer styling */
@@ -183,7 +197,7 @@
   <!-- Hero Section -->
   <header class="hero">
     <!-- Corrected image path -->
-    <img class="avatar" src="Portfolio/profile.jpg" alt="Zaufishan">
+    <img class="avatar" src="https://placehold.co/140x140/ff5722/ffffff?text=ZA" alt="Zaufishan">
     <h1 class="big-name">Hello! I'm Zaufishan</h1>
     <p class="tagline">B.Tech CSE Student • Web Developer • Problem Solver</p>
     <button class="github-btn" onclick="window.open('https://github.com/Zaufishan753','_blank')">
@@ -234,7 +248,7 @@
       <div class="project-card">
         <h3>💻 Personal Portfolio Website</h3>
         <p>Designed and developed a responsive portfolio website using HTML and CSS. Hosted on GitHub Pages.</p>
-        <a href="https://zaufishan753.github.io/Portfolio/" class="github-btn" style="background-color: #6c5ce7; color: white;">View Project</a>
+        <a href="https://zaufishan753.github.io/Portfolio/" class="github-btn" style="background-color: #ff5722; color: white;">View Project</a>
       </div>
     </section>
 
