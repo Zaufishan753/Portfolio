@@ -1,66 +1,254 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zaufishan - Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Zaufishan — Portfolio</title>
+
+  <!-- CSS is now embedded directly in the HTML file -->
+  <style>
+    /* Importing a modern and professional font */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+    /* Basic styles for the entire page */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #1d1b20, #3c0c59); /* Changed to black and violet mixture */
+      color: #e0e0e0; /* Changed font color for better readability on dark background */
+      line-height: 1.6;
+    }
+
+    /* Hero section styling */
+    .hero {
+      text-align: center;
+      padding: 5rem 1rem;
+      background: linear-gradient(135deg, #a777f1, #513e9a); /* A deeper, more vibrant gradient */
+      color: white;
+    }
+
+    .avatar {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 5px solid white;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease-in-out;
+      margin-bottom: 1rem;
+    }
+
+    .avatar:hover {
+      transform: scale(1.05);
+    }
+
+    .big-name {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin: 0;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .tagline {
+      font-size: 1.4rem;
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 2rem;
+    }
+
+    .github-btn {
+      background: #24292e; /* GitHub's brand color */
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .github-btn:hover {
+      background: #000;
+      transform: translateY(-2px);
+    }
+
+    /* Main content container */
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    /* Section headings */
+    h2 {
+      font-size: 2.2rem;
+      font-weight: 600;
+      color: #6c5ce7; /* Changed color for better readability */
+      border-bottom: 3px solid #6c5ce7;
+      display: inline-block;
+      padding-bottom: 0.25rem;
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Skills list styling */
+    .skills-list {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .skills-list li {
+      background-color: #6c5ce7;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-weight: 600;
+    }
+
+    /* Project cards */
+    .project-card {
+      background: #2b2b2b; /* Changed card background for contrast */
+      padding: 1.5rem;
+      margin: 1rem 0;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .project-card h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #9370db; /* Changed color for better readability */
+      margin-bottom: 0.5rem;
+    }
+
+    .project-card p {
+      color: #c0c0c0; /* Changed font color for better readability on dark background */
+    }
+
+    /* Contact section links */
+    a {
+      color: #9370db; /* Changed color for better readability */
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #a777f1; /* Changed hover color for better readability */
+      text-decoration: underline;
+    }
+
+    /* Footer styling */
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      color: #999;
+      border-top: 1px solid #444; /* Changed border color for contrast */
+      margin-top: 3rem;
+    }
+
+    /* Styling for the heart icon in the footer */
+    .heart {
+      color: red;
+    }
+  </style>
+
+  <!-- Google Fonts for a more professional look -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Hero Section -->
+  <header class="hero">
+    <!-- Using a placeholder image with the initials ZA -->
+    <img class="avatar" src="https://placehold.co/140x140/513e9a/ffffff?text=ZA" alt="Zaufishan">
+    <h1 class="big-name">Hello! I'm Zaufishan</h1>
+    <p class="tagline">B.Tech CSE Student • Web Developer • Problem Solver</p>
+    <button class="github-btn" onclick="window.open('https://github.com/Zaufishan753','_blank')">
+      <span class="icon">🌟</span> View My GitHub
+    </button>
+  </header>
 
-<h1>Zaufishan</h1>
-<p>B.Tech CSE Student</p>
+  <main>
+    <!-- About Me Section -->
+    <section class="about">
+      <h2>About Me</h2>
+      <p>
+        I am a B.Tech 2nd-year student specializing in Computer Science with a keen interest in web development, problem-solving, and emerging technologies. I am passionate about building practical projects, enhancing skills, and applying theoretical knowledge to real-world applications. Eager to learn, adapt, and contribute to innovative solutions.
+      </p>
+    </section>
 
-<hr>
+    <!-- Education Section -->
+    <section class="education">
+      <h2>Education</h2>
+      <div class="project-card">
+        <h3>B.Tech in Computer Science, AKTU</h3>
+        <p><strong>2025 - Present</strong></p>
+      </div>
+      <div class="project-card">
+        <h3>Higher Secondary, CBSE</h3>
+        <p><strong>2023 - 2024</strong></p>
+      </div>
+      <div class="project-card">
+        <h3>Secondary, CBSE</h3>
+        <p><strong>2022 - 2023</strong></p>
+      </div>
+    </section>
 
-<h2>Personal Information</h2>
-<p>Email: zaufishanansari3556@gmail.com</p>
-<p>Phone: +91 XXXXX XXXXX</p>
-<p>Location: Lucknow, India</p>
-<p>GitHub: <a href="https://github.com/Zaufishan753">github.com/Zaufishan753</a></p>
+    <!-- Skills Section -->
+    <section class="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>HTML</li>
+        <li>Python</li>
+        <li>CSS Basics</li>
+        <li>C Basics</li>
+      </ul>
+    </section>
 
-<hr>
+    <!-- Projects Section -->
+    <section class="projects">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <h3>💻 Personal Portfolio Website</h3>
+        <p>Designed and developed a responsive portfolio website using HTML and CSS. Hosted on GitHub Pages.</p>
+        <a href="https://zaufishan753.github.io/Portfolio/" class="github-btn" style="background-color: #6c5ce7; color: white;">View Project</a>
+      </div>
+    </section>
 
-<h2>Profile Summary</h2>
-<p>I am a B.Tech 2nd-year student specializing in Computer Science with a keen interest in  web development, problem-solving, and emerging technologies. Passionate about building practical projects, enhancing skills, and applying theoretical knowledge to real-world applications. Eager to learn, adapt, and contribute to innovative solutions.</p>
+    <!-- Contact Section -->
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>📧 Email: <a href="mailto:zaufishanansari3556@gmail.com">zaufishanansari3556@gmail.com</a></p>
+      <p>📱 Mobile: <a href="tel:XXXXX XXXXX">+91 XXXXX XXXXX</a></p>
+      <p>💼 LinkedIn: <a href="http://www.linkedin.com/in/your-linkedin" target="_blank">linkedin.com/in/your-linkedin</a></p>
+    </section>
+  </main>
 
-<hr>
+  <!-- Footer -->
+  <footer>
+    <p>© <span id="year"></span> Zaufishan | All Rights Reserved</p>
+    <p>Made with <span class="heart">❤️</span></p>
+  </footer>
 
-<h2>Education</h2>
-<ul>
-    <li><strong>2025 - Present:</strong> B.Tech in Computer Science, AKTU</li>
-    <li><strong>2023 - 2024:</strong> Higher Secondary, CBSE</li>
-    <li><strong>2022 - 2023:</strong> Secondary, CBSE</li>
-</ul>
-
-<hr>
-
-<h2>Skills</h2>
-<ul>
-    <li>HTML</li>
-    <li>Python</li>
-    <li>CSS Basics</li>
-    <li>C Basics</li>
-</ul>
-
-<hr>
-
-<h2>Projects</h2>
-<h3>Personal Portfolio Website</h3>
-<p>Designed and developed a responsive portfolio website using HTML and CSS. Hosted on GitHub Pages.</p>
-<p><a href="https://zaufishan753.github.io/Portfolio/"">View Project</a></p>
-
-
-
-<hr>
-
-<h2>Contact</h2>
-<p>Email: <a href="zaufishanansari3556@gmail.com">zaufishanansari3556@gmail.com</a></p>
-
-<hr>
-
-<footer>
-    <p>&copy; 2025 Zaufishan | All Rights Reserved</p>
-</footer>
-
+  <script>
+    // JavaScript to dynamically set the current year in the footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
