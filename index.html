@@ -150,6 +150,13 @@
       color: #a777f1; /* Changed hover color for better readability */
       text-decoration: underline;
     }
+    
+    /* New styling for the social media icons */
+    .social-icons a {
+        font-size: 2rem;
+        margin: 0 1rem;
+        color: #9370db;
+    }
 
     /* Footer styling */
     footer {
@@ -176,7 +183,7 @@
   <!-- Hero Section -->
   <header class="hero">
     <!-- Using a placeholder image with the initials ZA -->
-    <img class="avatar" src="https://placehold.co/140x140/513e9a/ffffff?text=ZA" alt="Zaufishan">
+    <img class="avatar" src="portfolio/profile.jpg" alt="Zaufishan">
     <h1 class="big-name">Hello! I'm Zaufishan</h1>
     <p class="tagline">B.Tech CSE Student • Web Developer • Problem Solver</p>
     <button class="github-btn" onclick="window.open('https://github.com/Zaufishan753','_blank')">
@@ -232,11 +239,18 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="contact">
-      <h2>Contact</h2>
-      <p>📧 Email: <a href="mailto:zaufishanansari3556@gmail.com">zaufishanansari3556@gmail.com</a></p>
-      <p>📱 Mobile: <a href="tel:XXXXX XXXXX">+91 XXXXX XXXXX</a></p>
-      <p>💼 LinkedIn: <a href="http://www.linkedin.com/in/your-linkedin" target="_blank">linkedin.com/in/your-linkedin</a></p>
+    <section class="contact" style="text-align: center;">
+      <h2>Get In Touch</h2>
+      <p style="color: #c0c0c0; max-width: 600px; margin: 0 auto 2rem;">
+        I'm always open to new opportunities and collaborations. Feel free to connect with me!
+      </p>
+      <p style="font-size: 1.25rem; font-weight: 600; margin-bottom: 2rem;">
+        <a href="mailto:zaufishanansari3556@gmail.com">zaufishanansari3556@gmail.com</a>
+      </p>
+      <div class="social-icons">
+        <a href="https://linkedin.com/in/your-linkedin" target="_blank" title="LinkedIn">💼</a>
+        <a href="https://github.com/Zaufishan753" target="_blank" title="GitHub">🌟</a>
+      </div>
     </section>
   </main>
 
